@@ -40,7 +40,7 @@ const PLUGIN_PEER_DEPENDENCIES = {
 
 function getPackageJsonContent(name: string, peerDependencies = {}, dependencies = {}) {
   return merge(PACKAGE_JSON_BASE, {
-    name: '@ionic-native/' + name,
+    name: '@laurentgoudet/ionic-native-' + name,
     dependencies,
     peerDependencies,
     version: VERSION,
