@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaInstance, IonicNativePlugin, Plugin, checkAvailability } from '@ionic-native/core';
+import { CordovaInstance, IonicNativePlugin, Plugin, checkAvailability } from '@laurentgoudet/ionic-native-core';
 
 export interface FlurryAnalyticsOptions {
   /** Flurry API key is required */

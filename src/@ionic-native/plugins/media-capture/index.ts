@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cordova, CordovaProperty, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { Cordova, CordovaProperty, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 import { Observable } from 'rxjs';
 
 declare const navigator: any;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin } from '@laurentgoudet/ionic-native-core';
 
 export class SmartlookSetupConfigBuilder {
   private readonly _smartlookSetupConfig: SmartlookSetupConfig;

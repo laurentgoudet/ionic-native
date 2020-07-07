@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, IonicNativePlugin, getPromise } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin, getPromise } from '@laurentgoudet/ionic-native-core';
 
 export interface WonderPushDelegate {
   urlForDeepLink(url: string, callback: (url?: string) => void): void;

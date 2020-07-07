@@ -6,7 +6,7 @@ import {
   CordovaInstance,
   InstanceProperty,
   IonicNativePlugin,
-} from '@ionic-native/core';
+} from '@laurentgoudet/ionic-native-core';
 import { Observable } from 'rxjs';
 
 /**

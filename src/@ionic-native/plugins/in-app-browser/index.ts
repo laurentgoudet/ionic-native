@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaInstance, InstanceCheck, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { CordovaInstance, InstanceCheck, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 import { Observable, Observer } from 'rxjs';
 
 declare const cordova: Cordova & { InAppBrowser: any };

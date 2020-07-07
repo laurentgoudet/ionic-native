@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin } from '@laurentgoudet/ionic-native-core';
 
 export enum BarcodeFormat {
   UNKNOWN = -1,
@@ -16,7 +16,7 @@ export enum BarcodeFormat {
   UPC_A = 512,
   UPC_E = 1024,
   PDF417 = 2048,
-  AZTEC = 4096
+  AZTEC = 4096,
 }
 
 export enum BarcodeValueType {
@@ -45,7 +45,7 @@ export enum BarcodeValueType {
   /** Barcode value type for calendar events. */
   CalendarEvent,
   /** Barcode value type for driver's license data. */
-  DriversLicense
+  DriversLicense,
 }
 
 export enum BarcodeEmailType {
@@ -54,7 +54,7 @@ export enum BarcodeEmailType {
   /** Barcode work email type. */
   Work,
   /** Barcode home email type. */
-  Home
+  Home,
 }
 
 export enum BarcodePhoneType {
@@ -67,7 +67,7 @@ export enum BarcodePhoneType {
   /** Barcode fax phone type. */
   Fax,
   /** Barcode mobile phone type. */
-  Mobile
+  Mobile,
 }
 
 export enum BarcodeWiFiEncryptionType {
@@ -78,7 +78,7 @@ export enum BarcodeWiFiEncryptionType {
   /** Barcode WPA Wi-Fi encryption type. */
   WPA,
   /** Barcode WEP Wi-Fi encryption type. */
-  WEP
+  WEP,
 }
 
 export enum BarcodeAddressType {
@@ -87,97 +87,97 @@ export enum BarcodeAddressType {
   /** Barcode work address type. */
   Work,
   /** Barcode home address type. */
-  Home
+  Home,
 }
 
 export interface Barcode {
-  valueType: BarcodeValueType
-  format: BarcodeFormat
-  rawValue: string
-  displayValue: string
-  cornerPoints: any
-  email: BarcodeEmail
-  phone: BarcodePhone
-  sms: BarcodeSms
-  url: BarcodeUrl
-  wifi: BarcodeWifi
-  geoPoint: BarcodeGeoPoint
-  calendarEvent: BarcodeCalendarEvent
-  contactInfo: BarcodeContactInfo
-  driverLicense: BarcodeDriverLicense
+  valueType: BarcodeValueType;
+  format: BarcodeFormat;
+  rawValue: string;
+  displayValue: string;
+  cornerPoints: any;
+  email: BarcodeEmail;
+  phone: BarcodePhone;
+  sms: BarcodeSms;
+  url: BarcodeUrl;
+  wifi: BarcodeWifi;
+  geoPoint: BarcodeGeoPoint;
+  calendarEvent: BarcodeCalendarEvent;
+  contactInfo: BarcodeContactInfo;
+  driverLicense: BarcodeDriverLicense;
 }
 
 export interface BarcodeEmail {
-  address: string
-  body: string
-  subject: string
-  type: BarcodeEmailType
+  address: string;
+  body: string;
+  subject: string;
+  type: BarcodeEmailType;
 }
 
 export interface BarcodePhone {
-  number: string
-  type: BarcodePhoneType
+  number: string;
+  type: BarcodePhoneType;
 }
 
 export interface BarcodeSms {
-  phoneNumber: string
-  message: string
+  phoneNumber: string;
+  message: string;
 }
 
 export interface BarcodeUrl {
-  title: string
-  url: string
+  title: string;
+  url: string;
 }
 export interface BarcodeWifi {
-  ssid: string
-  password: string
-  type: BarcodeWiFiEncryptionType
+  ssid: string;
+  password: string;
+  type: BarcodeWiFiEncryptionType;
 }
 export interface BarcodeGeoPoint {
-  latitude: number
-  longitude: number
+  latitude: number;
+  longitude: number;
 }
 
 export interface BarcodeCalendarEvent {
-  eventDescription: string
-  location: string
-  organizer: string
-  status: string
-  summary: string
-  start: any
-  end: any
+  eventDescription: string;
+  location: string;
+  organizer: string;
+  status: string;
+  summary: string;
+  start: any;
+  end: any;
 }
 
 export interface BarcodeContactInfo {
-  title: string
-  name: string
-  addresses: BarcodeAddress[]
-  phones: BarcodePhone[]
-  emails: BarcodeEmail[]
-  organization: string
-  urls: string
+  title: string;
+  name: string;
+  addresses: BarcodeAddress[];
+  phones: BarcodePhone[];
+  emails: BarcodeEmail[];
+  organization: string;
+  urls: string;
 }
 
 export interface BarcodeAddress {
-  addressLine: string
-  type: BarcodeAddressType
+  addressLine: string;
+  type: BarcodeAddressType;
 }
 
 export interface BarcodeDriverLicense {
-  firstName: string
-  middleName: string
-  lastName: string
-  gender: string
-  addressCity: string
-  addressState: string
-  addressStreet: string
-  addressZip: string
-  birthDate: string
-  documentType: string
-  licenseNumber: string
-  expiryDate: string
-  issuingDate: string
-  issuingCountry: string
+  firstName: string;
+  middleName: string;
+  lastName: string;
+  gender: string;
+  addressCity: string;
+  addressState: string;
+  addressStreet: string;
+  addressZip: string;
+  birthDate: string;
+  documentType: string;
+  licenseNumber: string;
+  expiryDate: string;
+  issuingDate: string;
+  issuingCountry: string;
 }
 
 /**

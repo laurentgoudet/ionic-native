@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin } from '@laurentgoudet/ionic-native-core';
 
 /**
  * This is the language object which will be returned by `downloadModel`, `deleteModel`, `getAvailableModels` and `getDownloadedModels` methods.

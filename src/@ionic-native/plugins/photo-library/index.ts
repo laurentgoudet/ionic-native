@@ -1,4 +1,4 @@
-import { Cordova, CordovaOptions, IonicNativePlugin, Plugin, wrap } from '@ionic-native/core';
+import { Cordova, CordovaOptions, IonicNativePlugin, Plugin, wrap } from '@laurentgoudet/ionic-native-core';
 import { Observable, Observer } from 'rxjs';
 import { Injectable } from '@angular/core';
 

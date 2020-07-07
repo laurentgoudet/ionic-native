@@ -1,5 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, CordovaInstance, IonicNativePlugin, checkAvailability } from '@ionic-native/core';
+import {
+  Plugin,
+  Cordova,
+  CordovaInstance,
+  IonicNativePlugin,
+  checkAvailability,
+} from '@laurentgoudet/ionic-native-core';
 import { Observable } from 'rxjs';
 
 declare const window: any;

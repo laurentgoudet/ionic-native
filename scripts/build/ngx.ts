@@ -69,7 +69,7 @@ export function generateLegacyBundles() {
           if (warning.code === 'UNUSED_EXTERNAL_IMPORT') return;
           warn(warning);
         },
-        external: ['@angular/core', '@ionic-native/core', 'rxjs', 'tslib'],
+        external: ['@angular/core', '@laurentgoudet/ionic-native-core', 'rxjs', 'tslib'],
       })
       .then(bundle =>
         bundle.write({
@@ -106,7 +106,7 @@ export function modifyMetadata() {
 function removeIonicNativeDecorators(node: any) {
   if (node.decorators && node.decorators.length) {
     node.decorators = node.decorators.filter(
-      (d: { expression: { module: string } }) => d.expression.module !== '@ionic-native/core'
+      (d: { expression: { module: string } }) => d.expression.module !== '@laurentgoudet/ionic-native-core'
     );
   }
 

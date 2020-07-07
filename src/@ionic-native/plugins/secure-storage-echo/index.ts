@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaCheck, CordovaInstance, getPromise, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { CordovaCheck, CordovaInstance, getPromise, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 
 export interface SecureStorageEchoOptions {
   android: {

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaCheck, CordovaProperty, IonicNativePlugin, Plugin, getPromise } from '@ionic-native/core';
+import { CordovaCheck, CordovaProperty, IonicNativePlugin, Plugin, getPromise } from '@laurentgoudet/ionic-native-core';
 
 export interface IFile extends Blob {
   /**

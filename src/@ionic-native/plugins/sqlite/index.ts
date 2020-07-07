@@ -6,7 +6,7 @@ import {
   InstanceProperty,
   IonicNativePlugin,
   Plugin,
-} from '@ionic-native/core';
+} from '@laurentgoudet/ionic-native-core';
 
 declare const sqlitePlugin: any;
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cordova, CordovaCheck, IonicNativePlugin, Plugin, getPromise } from '@ionic-native/core';
+import { Cordova, CordovaCheck, IonicNativePlugin, Plugin, getPromise } from '@laurentgoudet/ionic-native-core';
 
 interface FontOptions {
   name: string; // The name of the font family. Only supported on iOS

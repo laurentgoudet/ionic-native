@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaProperty, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { CordovaProperty, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 
 /**
  * @name Ionic Webview

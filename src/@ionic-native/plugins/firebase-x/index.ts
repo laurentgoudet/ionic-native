@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
+import { Plugin, Cordova, IonicNativePlugin } from '@laurentgoudet/ionic-native-core';
 import { Observable } from 'rxjs';
 
 export interface IChannelOptions {
@@ -526,13 +526,9 @@ export class FirebaseX extends IonicNativePlugin {
    *   code {string} - verification code. Will only be present if instantVerification is true. Always undefined on iOS.
    */
   @Cordova({
-    callbackOrder: 'reverse'
+    callbackOrder: 'reverse',
   })
-  verifyPhoneNumber(
-    phoneNumber: string,
-    timeOutDuration: number,
-    fakeVerificationCode?: string
-  ): Promise<any> {
+  verifyPhoneNumber(phoneNumber: string, timeOutDuration: number, fakeVerificationCode?: string): Promise<any> {
     return;
   }
 

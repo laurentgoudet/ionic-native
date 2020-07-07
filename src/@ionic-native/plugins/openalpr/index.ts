@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { Cordova, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 
 export interface OpenALPROptions {
   /** Country used for scanning the license plate */

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CordovaCheck, IonicNativePlugin, Plugin } from '@ionic-native/core';
+import { CordovaCheck, IonicNativePlugin, Plugin } from '@laurentgoudet/ionic-native-core';
 
 declare const AbbyyRtrSdk: any;
 

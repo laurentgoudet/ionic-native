@@ -34,7 +34,7 @@ const MIN_CORE_VERSION = '^5.1.0';
 const RXJS_VERSION = '^5.5.0 || ^6.5.0';
 
 const PLUGIN_PEER_DEPENDENCIES = {
-  '@ionic-native/core': MIN_CORE_VERSION,
+  '@laurentgoudet/ionic-native-core': MIN_CORE_VERSION,
   rxjs: RXJS_VERSION,
 };
 

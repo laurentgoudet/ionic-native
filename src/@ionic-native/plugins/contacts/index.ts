@@ -7,7 +7,7 @@ import {
   Plugin,
   checkAvailability,
   getPromise,
-} from '@ionic-native/core';
+} from '@laurentgoudet/ionic-native-core';
 
 declare const window: any, navigator: any;
 
